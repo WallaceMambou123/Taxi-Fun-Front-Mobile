@@ -65,6 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
     if (permission == LocationPermission.denied) {
       setState(() => _isLoadingLocation = false);
+
       return;
     }
 
@@ -273,6 +274,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       children: [
                         Expanded(
                           child: ElevatedButton(
+
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(backgroundColor: orangeColor),
                             child: const Text('Transport', style: TextStyle(color: Colors.white)),
